@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.northeastern.firebase.SendStickersActivity">
+
+    <ImageView
+        android:id="@+id/weather_icon_clear"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        app:layout_constraintBottom_toTopOf="@id/weather_icon_clear_sent_times"
+        app:layout_constraintEnd_toStartOf="@id/weather_icon_clouds"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline13"
+        app:srcCompat="@drawable/weather_icon_clear" />
+
+    <TextView
+        android:id="@+id/weather_icon_clear_sent_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sent count: "
+        app:layout_constraintBottom_toTopOf="@id/weather_icon_rainbow"
+        app:layout_constraintEnd_toStartOf="@id/weather_icon_clouds_sent_times"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weather_icon_clear" />
+
+    <ImageView
+        android:id="@+id/weather_icon_clouds"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        app:layout_constraintEnd_toStartOf="@id/weather_icon_rain"
+        app:layout_constraintStart_toEndOf="@id/weather_icon_clear"
+        app:layout_constraintTop_toTopOf="@id/guideline13"
+        app:layout_constraintBottom_toTopOf="@id/weather_icon_clouds_sent_times"
+        app:srcCompat="@drawable/weather_icon_clouds" />
+
+    <TextView
+        android:id="@+id/weather_icon_clouds_sent_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sent count: "
+        app:layout_constraintEnd_toStartOf="@id/weather_icon_rain_sent_times"
+        app:layout_constraintStart_toEndOf="@id/weather_icon_clear_sent_times"
+        app:layout_constraintTop_toBottomOf="@id/weather_icon_clouds"
+        app:layout_constraintBottom_toTopOf="@id/weather_icon_smog"/>
+
+    <ImageView
+        android:id="@+id/weather_icon_rainbow"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        app:layout_constraintBottom_toTopOf="@id/weather_icon_rainbow_sent_times"
+        app:layout_constraintEnd_toStartOf="@id/weather_icon_smog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weather_icon_clear_sent_times"
+        app:srcCompat="@drawable/weather_icon_rainbow" />
+
+    <ImageView
+        android:id="@+id/weather_icon_snow"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        app:layout_constraintEnd_toStartOf="@id/weather_icon_bolt"
+        app:layout_constraintStart_toEndOf="@id/weather_icon_smog"
+        app:layout_constraintTop_toBottomOf="@id/weather_icon_rain_sent_times"
+        app:layout_constraintBottom_toTopOf="@id/weather_icon_snow_sent_times"
+        app:srcCompat="@drawable/weather_icon_snow" />
+
+    <ImageView
+        android:id="@+id/weather_icon_bolt"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        app:srcCompat="@drawable/weather_icon_bolt"
+        app:layout_constraintStart_toEndOf="@id/weather_icon_snow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weather_icon_drizzle_sent_times"
+        app:layout_constraintBottom_toTopOf="@id/weather_icon_bolt_sent_times" />
+
+    <TextView
+        android:id="@+id/weather_icon_smog_sent_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sent count: "
+        app:layout_constraintBottom_toTopOf="@id/guideline14"
+        app:layout_constraintEnd_toStartOf="@id/weather_icon_snow_sent_times"
+        app:layout_constraintStart_toEndOf="@id/weather_icon_rainbow_sent_times"
+        app:layout_constraintTop_toBottomOf="@id/weather_icon_smog"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <ImageView
+        android:id="@+id/weather_icon_drizzle"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/weather_icon_rain"
+        app:layout_constraintTop_toTopOf="@id/guideline13"
+        app:layout_constraintBottom_toTopOf="@id/weather_icon_drizzle_sent_times"
+        app:srcCompat="@drawable/weather_icon_drizzle" />
+
+    <TextView
+        android:id="@+id/weather_icon_drizzle_sent_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sent count: "
+        app:layout_constraintBottom_toTopOf="@id/weather_icon_bolt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/weather_icon_rain_sent_times"
+        app:layout_constraintTop_toBottomOf="@id/weather_icon_drizzle"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <TextView
+        android:id="@+id/weather_icon_snow_sent_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sent count: "
+        app:layout_constraintEnd_toStartOf="@id/weather_icon_bolt_sent_times"
+        app:layout_constraintStart_toEndOf="@id/weather_icon_smog_sent_times"
+        app:layout_constraintTop_toBottomOf="@id/weather_icon_snow"
+        app:layout_constraintBottom_toTopOf="@id/guideline14"/>
+
+    <ImageView
+        android:id="@+id/weather_icon_rain"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        app:layout_constraintEnd_toStartOf="@id/weather_icon_drizzle"
+        app:layout_constraintStart_toEndOf="@id/weather_icon_clouds"
+        app:layout_constraintTop_toTopOf="@id/guideline13"
+        app:layout_constraintBottom_toTopOf="@id/weather_icon_rain_sent_times"
+        app:srcCompat="@drawable/weather_icon_rain" />
+
+    <ImageView
+        android:id="@+id/weather_icon_smog"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        app:layout_constraintEnd_toStartOf="@id/weather_icon_snow"
+        app:layout_constraintStart_toEndOf="@id/weather_icon_rainbow"
+        app:layout_constraintBottom_toTopOf="@id/weather_icon_smog_sent_times"
+        app:layout_constraintTop_toBottomOf="@id/weather_icon_clouds_sent_times"
+        app:srcCompat="@drawable/weather_icon_smog" />
+
+    <TextView
+        android:id="@+id/weather_icon_rain_sent_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sent count: "
+        app:layout_constraintEnd_toStartOf="@id/weather_icon_drizzle_sent_times"
+        app:layout_constraintStart_toEndOf="@id/weather_icon_clouds_sent_times"
+        app:layout_constraintTop_toBottomOf="@id/weather_icon_rain"
+        app:layout_constraintBottom_toTopOf="@id/weather_icon_snow"/>
+
+    <TextView
+        android:id="@+id/weather_icon_bolt_sent_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sent count: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/weather_icon_snow_sent_times"
+        app:layout_constraintTop_toBottomOf="@id/weather_icon_bolt"
+        app:layout_constraintBottom_toTopOf="@id/guideline14" />
+
+    <TextView
+        android:id="@+id/weather_icon_rainbow_sent_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sent count: "
+        app:layout_constraintBottom_toTopOf="@id/guideline14"
+        app:layout_constraintEnd_toStartOf="@id/weather_icon_smog_sent_times"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weather_icon_rainbow" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8832117" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/stickersCollectedBtn"
+        app:layout_constraintTop_toTopOf="@id/guideline14"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/stickersCollectedBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stickers Collected"
+        app:layout_constraintStart_toStartOf="@id/submitBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline14"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/userNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My username: "
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/sendTo" />
+
+    <TextView
+        android:id="@+id/sendTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send to"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline13"
+        app:layout_constraintStart_toEndOf="@id/userNameTv"
+        app:layout_constraintEnd_toStartOf="@id/usersSpinner" />
+
+    <Spinner
+        android:id="@+id/usersSpinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@id/guideline13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/sendTo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

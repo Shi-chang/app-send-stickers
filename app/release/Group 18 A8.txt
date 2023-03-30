@@ -1,0 +1,27 @@
+GitHub link:
+https://github.com/chenchen1022/ParentEase
+
+
+Names: 
+Chen Chen
+Lin Han
+Shichang Ye
+Manping Zhao
+
+
+Team member's GitHub IDs:
+Shi-chang
+Manpingzz
+chenchen1022
+LinHanMSCS
+
+
+Test accounts:
+Manping Zhao
+Chen Chen
+Lin Han
+
+
+Note:
+Sending notification works, but sometimes there is a lag(may be caused by the Internet or Firebase response time).
+Please wait a little if they don't come out from the receiver's phone immediately. Thanks.
