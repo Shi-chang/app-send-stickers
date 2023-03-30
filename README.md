@@ -2,7 +2,7 @@
 
 This is an application that allows users to register, login, and send stickers to other users. The
 users can see the stickers they have sent to other users as well as the stickers they have received
-fro other users.
+from other users.
 
 # What I have learned
 
